@@ -8,13 +8,13 @@ $data = $apicaller->sendRequest(array(
 	'action' => 'login', 		//function name
 	'apiname' => 'aops', 		//must have
 	'apipass' => 'password',	//must have
-	'member_id' => 3, 			//requirement for login function
-	'username' => 'test',		//requirement for login function
-	'name' => 'test123',		//requirement for login function
-	'tgllahir' => '1234567',	//requirement for login function
-	'tglaplikasi' => '1234567',	//requirement for login function
-	'sponsor_id' => 1,			//requirement for login function
-	'introducer_id' => 1 		//requirement for login function
+	'member_id' => 2, 			//requirement for login function
+	'username' => 'arbud',		//requirement for login function
+	'name' => 'arief setiabudi',		//requirement for login function
+	'tgllahir' => '09101987',	//requirement for login function
+	'tglaplikasi' => '09101987',	//requirement for login function
+	'sponsor_id' => 0,			//requirement for login function
+	'introducer_id' => 0 		//requirement for login function
 ));
 
 echo '<a href="http://localhost/gnt-aops/public/loginapi/'.$data.'">testtt</a>';

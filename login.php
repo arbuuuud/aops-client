@@ -301,7 +301,8 @@
 								<?php
 								include_once 'apicaller.php';
 
-								$apicaller = new ApiCaller('APP001', '28e336ac6c9423d946ba02d19c6a2632','http://localhost:8000/api');
+								// $apicaller = new ApiCaller('APP001', '28e336ac6c9423d946ba02d19c6a2632','http://localhost:8000/api');
+								$apicaller = new ApiCaller('APP001', '28e336ac6c9423d946ba02d19c6a2632','http://localhost/gnt-aops/public/api');
 
 								$data = $apicaller->sendRequest(array(
 									'action' => 'login', 		//function name
@@ -316,7 +317,8 @@
 									'introducer_id' => 0 		//requirement for login function
 								));
 
-								echo '<a href="http://localhost:8000/loginapi/'.$data.'"><i class="fa fa-edit fa-fw"></i>Prospecting System</a>';
+								echo '<a href="http://localhost/gnt-aops/public/loginapi/'.$data.'"><i class="fa fa-edit fa-fw"></i>Prospecting System</a>';
+								// echo '<a href="http://localhost:8000/loginapi/'.$data.'"><i class="fa fa-edit fa-fw"></i>Prospecting System</a>';
 
 								?>
 
